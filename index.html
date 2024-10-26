@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZangaPay - Simplify and manage your bill payments</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header
+      style="
+        background-color: white;
+        border-radius: 50px;
+        margin: 1rem;
+        padding: 0.5rem 2rem;
+      "
+    >
+      <nav
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 1.5rem;
+          "
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="margin-right: 0.5rem"
+          >
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#FF6B6B" />
+            <path
+              d="M2 17L12 22L22 17"
+              stroke="#FF6B6B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2 12L12 17L22 12"
+              stroke="#FF6B6B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          ZangaPay
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0">
+          <li style="margin: 0 1rem">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: 500"
+              >Home</a
+            >
+          </li>
+          <li style="margin: 0 1rem">
+            <a
+              href="about.html"
+              style="color: black; text-decoration: none; font-weight: 500"
+              >About</a
+            >
+          </li>
+          <li style="margin: 0 1rem">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: 500"
+              >Services</a
+            >
+          </li>
+          <li style="margin: 0 1rem">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: 500"
+              >Contact</a
+            >
+          </li>
+          <li style="margin: 0 1rem">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: 500"
+              >FAQ</a
+            >
+          </li>
+          <li style="margin: 0 1rem">
+            <a
+              href="#"
+              style="color: black; text-decoration: none; font-weight: 500"
+              >Partner with us</a
+            >
+          </li>
+        </ul>
+        <button
+          style="
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+          "
+        >
+          Download App
+        </button>
+      </nav>
+    </header>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navUl = document.querySelector("nav ul");
+
+        hamburger.addEventListener("click", function () {
+          navUl.classList.toggle("show");
+        });
+      });
+    </script>
+
+    <main class="container" style="text-align: center; padding-top: 2rem">
+      <div
+        style="
+          display: inline-block;
+          background-color: white;
+          color: #333;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          margin-bottom: 1rem;
+        "
+      >
+        <span style="display: flex; align-items: center">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="margin-right: 0.5rem"
+          >
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              stroke="#4CAF50"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9 12L11 14L15 10"
+              stroke="#4CAF50"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Smart Finance, Smart Living
+        </span>
+      </div>
+      <h1 style="font-size: 3rem; margin-bottom: 1rem; line-height: 1.2">
+        Simplify and manage your bill payments quickly, securely, and easily.
+      </h1>
+      <p style="font-size: 1.2rem; margin-bottom: 2rem">
+        Quickly and securely pay all your bills in one convenient place.
+      </p>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          margin-bottom: 2rem;
+        "
+      >
+        <img
+          style="height: 50px"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+        />
+        <img
+          style="height: 50px"
+          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+          alt="Download on the App Store"
+        />
+      </div>
+      <div style="position: relative; height: 300px">
+        <img
+          src="/placeholder.svg?height=500&width=250"
+          alt="ZangaPay App Preview 1"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-120px) rotate(-10deg);
+            width: 200px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+          "
+        />
+        <img
+          src="/placeholder.svg?height=500&width=250"
+          alt="ZangaPay App Preview 2"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-80px) rotate(10deg);
+            width: 200px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          "
+        />
+      </div>
+    </main>
+
+    <section
+      style="
+        background-color: white;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+      "
+    >
+      <div class="container">
+        <h2 style="color: black; font-size: 1.5rem; margin-bottom: 1rem">
+          We have partnered with all the major brands in Nigeria to ensure your
+          bills are paid at the cheapest rates, providing unmatched convenience
+          and value.
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+          "
+        >
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo1"
+              alt="Partner Logo 1"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo2"
+              alt="Partner Logo 2"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo3"
+              alt="Partner Logo 3"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo4"
+              alt="Partner Logo 4"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo5"
+              alt="Partner Logo 5"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo6"
+              alt="Partner Logo 6"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo7"
+              alt="Partner Logo 7"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo8"
+              alt="Partner Logo 8"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo9"
+              alt="Partner Logo 9"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo10"
+              alt="Partner Logo 10"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo11"
+              alt="Partner Logo 11"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo12"
+              alt="Partner Logo 12"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo13"
+              alt="Partner Logo 13"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo14"
+              alt="Partner Logo 14"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo15"
+              alt="Partner Logo 15"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div
+            style="
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              padding: 1rem;
+            "
+          >
+            <img
+              src="/placeholder.svg?height=50&width=100&text=Logo16"
+              alt="Partner Logo 16"
+              style="width: 100%; height: auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="
+        background-color: white;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px; /* Adjust as needed for height */
+      "
+    >
+      <div
+        style="
+          border: 1px solid #e0e0e0;
+          border-radius: 15px;
+          padding: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          max-width: 900px;
+          width: 100%;
+        "
+      >
+        <h2 style="color: black; font-size: 2rem; margin: 0; text-align: left">
+          Finally a better way<br />to simplify payments
+        </h2>
+        <p
+          style="
+            color: black;
+            font-size: 1rem;
+            max-width: 400px;
+            margin: 0;
+            text-align: left;
+          "
+        >
+          Zangapay is a Bill payment company. We are building an ecosystem to
+          enable people to digitally handle bill payments and create simple
+          financial access for everyone.
+        </p>
+      </div>
+    </section>
+
+    <section style="background-color: white; padding: 2rem; text-align: center">
+      <div class="container">
+        <h2 style="color: black; font-size: 2rem; margin-bottom: 0.5rem">
+          Our Services
+        </h2>
+        <p style="color: black; font-size: 1rem; margin-bottom: 2rem">
+          Pay all your bills at once, without leaving your home with BillPoint's
+          comprehensive range of services.
+        </p>
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 10C20 14.4183 16.4183 18 12 18C7.58172 18 4 14.4183 4 10C4 5.58172 7.58172 2 12 2"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M19.7778 17.5556L17.5556 22L15.3333 17.5556"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 0.5rem">Data Bundle Topup</h3>
+            <p style="font-size: 0.9rem">
+              Stay connected to the internet no matter where you are with
+              BillPoint's easy data bundle top-up service.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 16.92V19.92C22 20.4704 21.7893 20.9983 21.4142 21.3734C21.0391 21.7485 20.5113 21.9592 19.96 21.96C16.4289 21.9599 12.9952 20.8383 10.07 18.75C7.31141 16.8118 5.06734 14.2679 3.53 11.25C1.83962 8.01397 0.888615 4.32893 0.960001 2.59C0.960783 2.03957 1.17073 1.51225 1.54478 1.13724C1.91883 0.762229 2.4458 0.550642 2.99601 0.549999H5.99601C7.01478 0.538434 7.86328 1.29212 8.00001 2.3C8.07751 2.97526 8.2101 3.64214 8.40001 4.29C8.63229 5.10181 8.43393 5.9761 7.88 6.59L6.78 7.69C8.20107 10.5149 10.4851 12.7989 13.31 14.22L14.41 13.12C15.0239 12.5661 15.8982 12.3677 16.71 12.6C17.3579 12.7899 18.0248 12.9225 18.7 13C19.7162 13.1374 20.4692 13.9967 20.45 15.02L20.45 16.92H22Z"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 0.5rem">Airtime Topup</h3>
+            <p style="font-size: 0.9rem">
+              Stay connected with your loved ones and top up your airtime with
+              Zangapay. It's quick, easy, and available 24/7!
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 0.5rem">Betting</h3>
+            <p style="font-size: 0.9rem">
+              Feeling lucky? Bet on your favorite sports games or events with
+              Zangapay and enjoy the thrill of the game.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 12H22"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 0.5rem">Internet Topup</h3>
+            <p style="font-size: 0.9rem">
+              Whether you need internet for work or play, Zangapay makes it easy
+              to keep your connection strong and steady.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 4L12 14.01L9 11.01"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 0.5rem">Electricity Bills</h3>
+            <p style="font-size: 0.9rem">
+              Never miss a bill or sit in the dark again! Pay your electricity
+              bills on time with Zangapay's easy payment system.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 18H12.01"
+                  stroke="#FF6B6B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 0.5rem">Cable TV Subscription</h3>
+            <p style="font-size: 0.9rem">
+              Get uninterrupted access to your favorite TV shows and channels by
+              subscribing to your cable TV with Zangapay.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps-section">
+      <div class="container">
+        <h2>3 Simple Steps to Enjoy Zangapay.</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Download and Install the App</h3>
+              <p>
+                Visit your app store, search for "Zangapay" and download and
+                install the app on your mobile device.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Sign Up on Zangapay for free</h3>
+              <p>
+                Open the app and follow the quick and easy sign-up process. All
+                you need is your basic personal information.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>Add Funds and Pay Bills</h3>
+              <p>
+                Once you're signed in, you can add funds to your account and
+                start paying your bills. It's that simple!
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta-button">Get the app</a>
+        <img
+          src="/placeholder.svg?height=400&width=300"
+          alt="Happy Zangapay User"
+          class="user-image"
+        />
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How long does a transaction take?</h3>
+          <p>
+            All transactions on Zangapay are processed instantly. Whether you're
+            converting airtime to cash, topping up your phone, or paying utility
+            bills, the transaction will be completed within seconds.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How Can I Pay For Utility On Zangapay?</h3>
+          <p>
+            Simply navigate to the 'Utilities' section in the app and follow the
+            prompts.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Why Should I use Zangapay?</h3>
+          <p>
+            Zangapay offers fast, secure transactions with zero hidden fees.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How Much Does It Cost?</h3>
+          <p>There are no additional charges—what you see is what you pay.</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".faq-item h3").forEach((faqHeader) => {
+          faqHeader.addEventListener("click", () => {
+            const faqItem = faqHeader.parentElement;
+
+            // Toggle 'active' class on the clicked item
+            faqItem.classList.toggle("active");
+
+            // Close other open items (optional)
+            document.querySelectorAll(".faq-item").forEach((item) => {
+              if (item !== faqItem) {
+                item.classList.remove("active");
+              }
+            });
+          });
+        });
+      });
+    </script>
+    <div style="background-color: white">
+      <section class="app-promo">
+        <div class="promo-content">
+          <h2>Download Our App Free and Enjoy Exclusive Features!</h2>
+          <p>
+            Enjoy seamless navigation, exclusive content, and personalized
+            experiences right at your fingertips. Don't miss out on this
+            opportunity to enhance your daily routine with our user-friendly,
+            free mobile app.
+          </p>
+          <div class="store-buttons">
+            <a href="#" class="store-btn google-play">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play"
+              />
+            </a>
+            <a href="#" class="store-btn app-store">
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="promo-images">
+          <img
+            src="phone1.png"
+            alt="Phone Wallet Screenshot"
+            class="phone-image"
+          />
+          <img
+            src="phone2.png"
+            alt="Phone Balance Screenshot"
+            class="phone-image"
+          />
+        </div>
+      </section>
+    </div>
+    <div style="background-color: white">
+      <!-- <footer class="footer">
+				<div class="footer-container">
+					<div class="footer-brand">
+						<img
+							src="logo.png"
+							alt="ZangaPay Logo"
+							class="logo"
+						/>
+						<p>Subscribe</p>
+						<p>
+							Join our newsletter to stay up to date on features and
+							releases.
+						</p>
+						<form class="subscribe-form">
+							<input
+								type="email"
+								placeholder="Enter your email"
+								required
+							/>
+							<button type="submit">Subscribe</button>
+						</form>
+						<small
+							>By subscribing, you agree to our
+							<a href="#">Privacy Policy</a>.</small
+						>
+					</div>
+
+					<div class="footer-links">
+						<div class="link-column">
+							<h4>Quick Links</h4>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						<div class="link-column">
+							<h4>Services</h4>
+							<ul>
+								<li><a href="#">Data bundle purchases</a></li>
+								<li><a href="#">Mobile airtime top-ups</a></li>
+								<li><a href="#">Education bill payments</a></li>
+								<li><a href="#">Betting services</a></li>
+								<li><a href="#">Cable TV subscriptions</a></li>
+							</ul>
+						</div>
+						<div class="link-column">
+							<h4>Company</h4>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Terms of Service</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer-bottom">
+						<p>Copyright © 2024 Zangapay. All Rights Reserved</p>
+						<div class="social-icons">
+							<a href="#"
+								><img
+									src="facebook-icon.svg"
+									alt="Facebook"
+							/></a>
+							<a href="#"
+								><img
+									src="twitter-icon.svg"
+									alt="Twitter"
+							/></a>
+							<a href="#"
+								><img
+									src="youtube-icon.svg"
+									alt="YouTube"
+							/></a>
+							<a href="#"
+								><img
+									src="instagram-icon.svg"
+									alt="Instagram"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</footer> -->
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <img
+              src="/placeholder.svg?height=40&width=150"
+              alt="ZangaPay Logo"
+              class="logo"
+            />
+            <h3>Subscribe</h3>
+            <p>
+              Join our newsletter to stay up to date on features and releases.
+            </p>
+            <form class="subscribe-form">
+              <div class="input-wrapper">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+            <p class="privacy-note">
+              By subscribing you agree to with our Privacy Policy
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li>Data bundle purchases</li>
+              <li>Mobile airtime top-ups</li>
+              <li>Education bill payments</li>
+              <li>Betting services</li>
+              <li>Cable TV subscriptions</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Zangapay. All Rights Reserved</p>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="/placeholder.svg?height=24&width=24&text=facebook"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="/placeholder.svg?height=24&width=24&text=twitter"
+                alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="/placeholder.svg?height=24&width=24&text=instagram"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="/placeholder.svg?height=24&width=24&text=youtube"
+                alt="YouTube"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
