@@ -412,6 +412,13 @@ body {
 	bottom: 0;
 	max-width: 40%;
 	height: auto;
+	padding-right: 1rem; /* Add padding to push image away from the text */
+	padding-bottom: 1rem; /* Add padding to avoid it touching the bottom */
+}
+
+.steps-section .container {
+	position: relative;
+	padding-right: 45%; /* Adjust padding on the right to create space for the image */
 }
 
 .faq-section {
@@ -513,12 +520,12 @@ body {
 .phone-image {
 	width: 200px;
 	border-radius: 20px;
-	transform: rotate(-10deg);
+	/* transform: rotate(-10deg); */
 }
 
-.phone-image:nth-child(2) {
+/* .phone-image:nth-child(2) {
 	transform: rotate(10deg);
-}
+} */
 
 /* Responsive styles for App Promo */
 @media (max-width: 1024px) {

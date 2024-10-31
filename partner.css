@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.All{
+  background: linear-gradient(to bottom, #ff9a9e, #ff5757);
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background-color: white;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 10px 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff5757;
+}
+.download-btn {
+  background-color: #ff5757;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.download-btn:hover {
+  background-color: #ff3c3c;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+main {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #4caf50;
+  border-radius: 2px;
+}
+p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.form-group {
+  text-align: left;
+}
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+.file-input-wrapper {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.file-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.file-input-wrapper span {
+  color: #666;
+}
+.file-input-wrapper label {
+  background-color: white;
+  color: #ff5757;
+  padding: 8px 15px;
+  border: 1px solid #ff5757;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="file"] {
+  display: none;
+}
+button[type="submit"] {
+  grid-column: 1 / -1;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+button[type="submit"]:hover {
+  background-color: #333;
+}
+@media (max-width: 768px) {
+  .nav-links,
+  .download-btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 80px 0;
+}
+
+.benefits-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.benefit-number {
+  background-color: #ff5757;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.benefit-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.benefit-content p {
+  color: #666;
+}
+
+/* Download Section */
+.download-section {
+  background-color: #000;
+  color: white;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.download-section .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.download-content {
+  flex: 1;
+}
+
+.download-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.download-section p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.store-button img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.store-button:hover img {
+  transform: translateY(-3px);
+}
+
+.app-preview {
+  flex: 1;
+  position: relative;
+  min-height: 600px;
+}
+
+.phone-mockup {
+  position: absolute;
+  height: 600px;
+  width: auto;
+  object-fit: contain;
+}
+
+.mockup-2 {
+  transform: translateX(40%) rotate(10deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .download-section .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .store-buttons {
+      justify-content: center;
+  }
+
+  .app-preview {
+      width: 100%;
+  }
+
+  .phone-mockup {
+      position: relative;
+      height: 400px;
+  }
+
+  .mockup-2 {
+      transform: translateX(0) rotate(0);
+      display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-section h1,
+  .download-section h2 {
+      font-size: 2rem;
+  }
+
+  .benefit-item {
+      flex-direction: column;
+  }
+
+  .benefit-number {
+      margin-bottom: 10px;
+  }
+
+  .store-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .store-button img {
+      height: 40px;
+  }
+}
